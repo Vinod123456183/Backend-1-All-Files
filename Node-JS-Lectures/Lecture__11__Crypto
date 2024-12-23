@@ -1,0 +1,13 @@
+// deals with security 
+const crypto = require('crypto')
+
+// console.log(crypto.randomBytes(2).toString('hex')); //hex = * 2 
+
+
+// 3 step variable 
+console.log(crypto.createHash('sha256').update('thapa tech').digest('hex'));
+console.log(crypto.createHash('sha256').update('thapa tech').digest('hex'));
+console.log(crypto.createHash('sha256').update('differnrt value here ').digest('hex'));
+// update me same value h toh tabhi same hoga warna sahi nahi hoga
+
+// for hash crypt. algo , update. random string , digest . format 
