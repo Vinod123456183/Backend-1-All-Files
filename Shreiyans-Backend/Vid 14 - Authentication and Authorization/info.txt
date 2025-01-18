@@ -1,0 +1,41 @@
+user ko profile dene se phle check krna
+ hota h ki user hai kon = Authentication
+
+authorised to perform some taks which 
+only allowed to be executed  by the admin
+
+server har baar bhool jata h ki aap kon ho , 
+toh voh har kaam k liye humse pochega ki hum kon h
+to avoid we use cookies and session concept
+
+1 - How to set cookies
+2 - bcrypt for enc and decry
+3 - jwt and store data in jwt 
+
+
+2 
+password = password
+if database is hacked then we have to encrypt it 
+
+like we can use algos like sha256 , 
+and bcrypt helps to do this
+
+enc
+$2b$10$340K8TUzww1awY00hjW35u
+$2b$10$340K8TUzww1awY00hjW35u1/nlDvGi3iOM/AvrMiwJ1nfadojYOkO
+
+
+when we create a account we encrypt a password 
+and this encrypted password is stored in db
+so hume toh apna password yaad h 
+so mera password and hash value if equal then we will looged in 
+
+so later we will password ko hash and hash ko hash k sath match 
+
+
+jwt
+server ek string bjta h contains 3 parts
+string me data ko encrypt krte h
+
+phle baar toh server bjta h jb device dobara req marta h toh purple wale part se 
+pta lg jaega ki ki naam ky h dono ka toh hhume pochna nahi prega ki kon h
