@@ -1,0 +1,61 @@
+// maintain folder structure , mvc pattern , security , keys manage , error handlers
+
+const express = require('express');
+const app = express();
+const path = require('path');   
+const userModel = require('./models/user')
+app.set('view engine' , 'ejs')
+app.use(express.json());
+app.use(express.urlencoded({extended:true}))
+app.use(express.static(path.join(__dirname , 'public'))); 
+
+app.get('/' , (req  , res)=>{
+    res.render('index');
+})
+
+
+app.get('/read' , async (req  , res)=>{
+  
+    let allUSERs=     await userModel.find()
+    res.render('read' , {users:allUSERs}); 
+    
+})
+
+
+app.post('/create' , async (req  , res)=>{
+    let {name , email , img_url} = req.body;
+    let CreatedUSER = await userModel.create({
+        // name:name,
+        name,
+        email,
+        img:img_url
+    })
+
+    // res.send(CreatedUSER);
+    res.redirect('/read')
+
+})
+
+
+
+
+app.get('/edit/:id' , async (req  , res)=>{
+  
+    let allUS=     await userModel.findOne({_id:req.params.id})
+    res.render('edit' , {allUS}); 
+})
+
+
+app.post('/update/:id' , async (req  , res)=>{
+    let {img , name , email} = req.body;
+    let allUS=     await userModel.findOneAndUpdate({_id:req.params.id} , {name , img , email} , {new : true})
+    res.redirect('/read' ); 
+    
+})
+
+app.get('/delete/:id' , async (req  , res)=>{
+        await userModel.findOneAndDelete({_id:req.params.id})
+        res.redirect('/read')
+})
+app.listen(3000);
+
