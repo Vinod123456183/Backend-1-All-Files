@@ -1,0 +1,7 @@
+moonose
+schems
+model
+userCreatae -> pass - hash
+jwt token -> cookie
+
+login -> token -> decrypt -> email
