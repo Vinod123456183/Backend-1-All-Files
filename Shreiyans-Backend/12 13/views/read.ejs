@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="p-10 w-full h-full bg-zinc-500 text-white">
+        <a class="p-5" href="/">Back TO HOME</a>
+        <h2>READ PAGE</h2>
+        <div class="users flex gap-3 flex-wrap">
+
+            <% if (users.length > 0) { %>  <!-- Proper EJS Syntax for IF Condition -->
+                <% users.forEach((items) => { %>
+                    <div class="user w-72 p-10 bg-zinc-700 rounded-lg">
+                        <div class="w-full h-52 rounded-lg bg-red-500"> 
+                            <img src="<%= items.img %>" alt="User Image" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <h2 class="text-xl mt-3"><%= items.name %></h2>
+                        <h5 class="text-zinc-500"><%= items.email %></h5>
+                        <div class="flex gap-3">
+                            <a href="/edit/<%= items._id %>" class="text-zinc-500">EDIT USER</a>
+                            <a href="/delete/<%= items._id %>" class="text-red-500">DELETE USER</a>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>  <!-- Message if No Users Exist -->
+                <p class="text-white">No users found.</p>
+            <% } %>
+
+        </div>
+    </div>
+</body>
+</html>
