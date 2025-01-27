@@ -1,0 +1,9 @@
+middleware har baar chlta  h kisi bhi route se phle
+
+get server se frontend
+post  frontend se server
+data url me show nahi krna h toh post route
+post me req.body me data aata h 
+hr form get route ko hi krta h hit
+
+    
