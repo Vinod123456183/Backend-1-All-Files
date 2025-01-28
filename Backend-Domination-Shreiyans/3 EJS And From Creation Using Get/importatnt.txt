@@ -1,0 +1,14 @@
+Get Form
+
+1 - form jb bhi submit hoga sbse phle dekhiye ki sare k paas naam h 
+
+2 - From k paas action h ki nahi 
+    <form action="/ss">
+
+3- Backend ka route h ki nahi and ye form ka action and route should match
+
+4 - route me dekho ki get h ki post , by def get
+
+5 - data acc to route
+    get - req.query
+    post - req.body
