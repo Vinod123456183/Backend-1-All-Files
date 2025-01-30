@@ -1,0 +1,20 @@
+//data objects k form me 
+
+// Connetcion ,
+// Collection
+// Schema
+// Docouments
+// Models
+
+
+// everybrand have its own database
+// means uss particular brand ka database wahan h
+
+
+// puri chiz ek database h 
+    // and single single chiz , sector called collections
+    // Ex - Ghar k andar Rooms are called Collection and room k andar 3 log and every1 called docoument 
+    // and uske andar ek item === called docoument
+     
+
+// harsh sharma k paas ky ky data hoga called Schema
