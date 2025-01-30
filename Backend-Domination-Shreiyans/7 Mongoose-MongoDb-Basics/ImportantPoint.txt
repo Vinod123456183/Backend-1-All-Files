@@ -3,7 +3,7 @@
 // Connetcion ,
 // Collection
 // Schema
-// Docouments
+// Docouments are {} json like containg key val
 // Models
 
 
