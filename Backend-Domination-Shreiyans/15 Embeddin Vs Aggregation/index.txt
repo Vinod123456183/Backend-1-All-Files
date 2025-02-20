@@ -1,0 +1,27 @@
+
+jab bhi esa kuch show 
+like 
+sare post dikhao kisi particular user k then
+
+jb bhi baatcheet ki saare y dikhao 
+so we have to consider it as a model 
+
+
+Embedding - jb data future me jyada bda nahi hoga
+          - jb data bahut rarely change hoga
+          - jb data quickly load krna hai
+          - agar ek jagah change kr diya toh usse har jagah se change krna prega
+
+
+ex - jab hum data ko find krte h ek chote part k liye toh pura data load hoga
+    aur time k saath data agar brte rahega toh it will take more time to load also 
+ex - contact , email , name
+    y cheije rarely nahi change hoga
+agar inko refer kr denge toh voh populate hoga and it will take again more time.
+
+
+
+Referncing -
+            Jb data bahut baar change ho skta h 
+            Jb data baar baar change ho skta h   
+ex - likes
