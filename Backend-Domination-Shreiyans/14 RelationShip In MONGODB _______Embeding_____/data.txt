@@ -1,0 +1,30 @@
+if
+
+[User]         [Posts]
+
+
+har user k paas ek post h 
+so 1 cr log agar sari jagah post find so it will take very much time
+
+
+
+sare post ko ek jagah save krna called Embeding
+
+
+
+
+{   _id:135415,
+    name : "Amit"
+    post : [13333]
+}
+    
+ek dusre ki id ek dusre k paas h
+and This Idea Called Referencing
+Data Kahin aaur banate hai and ek dusre ki id de dete h called Referencing    
+
+{   
+    _id_USER:135415  
+    _id:13333,
+    content:"Helio" , 
+    date : 10 - 10- 2026
+},
