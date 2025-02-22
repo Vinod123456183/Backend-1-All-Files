@@ -1,0 +1,19 @@
+Aggregation - ek se jyada quaries ko line by line chalana 
+
+Ex - Saare Users Dhundo jo Bhopal me rhte h 
+//  ab nikalo jinki age 25 ho .
+//  ab nikalo jo male ho .
+//  ab nikalo jinka email Gmail pr ho .
+
+
+So this is Called Aggregation Pipeline
+
+
+
+
+Lect 2 
+$match  ->      Match krta h criteria
+$group  ->      Group krta h data ko group on the basis of given criteria
+$lookup  ->      lookup kisi data k andar kisi file k data ko bhr skta h kisi aaur collection k through
+$project  ->    Kisi data ko kisi aaur tarike se show kr skta h , selective field la skta h
+$unwind   ->    Sare data ki seperate docoument copy banata h
