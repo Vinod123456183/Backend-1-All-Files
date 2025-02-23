@@ -1,0 +1,1 @@
+encrypt + random_stuff(salt);
