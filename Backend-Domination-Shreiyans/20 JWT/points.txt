@@ -1,0 +1,6 @@
+token bnate wqt hume user ka data feed karana prta h
+token 3 chixo se bnta h
+
+1 -> Algorithm
+2 -> data
+3 -> Header (signature)
