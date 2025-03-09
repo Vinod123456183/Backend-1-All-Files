@@ -1,0 +1,6 @@
+backend pr io ka mtlb h every user 
+backend me io and socket 2 hote h 
+
+io jab ek se jyada logo ko messgage dena chatea h   ==> io
+jab message ek user ko dena chate h subko nahi dena chate h  ==> socket
+frontend pr mainly socet variable hota h   ==> socket
