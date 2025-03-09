@@ -1,0 +1,22 @@
+agar hum har baar hard disk pr jaakr daataa nikal rahe h , aur note that
+har baar data is same 
+toh hum baar baar db pr calll de rahe h
+agar hum call kr kre database ki toh db jldi chlega
+
+hum bahut sara data database se nikal rahe h baar baar data nikal rahe h aur voh change nahi hone wala data h
+cache
+
+hum data ko temp storage me store krte h and
+voh temp storage kaafi fast hoti isiliye data jldi access ho jata h
+
+cache daataa ram me store rhta h    ===== in memory caching by redis
+ 
+wahi daata cache krna h joh change nahi ho raha h
+
+
+
+
+// jab user ko fetch kre toh hum user ko cache kre
+// fir
+// jab dobara user ko fetch krenge toh hum usse cache kr lenge
+
