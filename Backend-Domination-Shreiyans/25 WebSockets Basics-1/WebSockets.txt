@@ -1,0 +1,26 @@
+Websocket is the type of protocol used to maintain a bridged gap betwen
+client and the server
+
+Ex- in previous days we have to do the refresh for getting the new msg
+now it is not 
+due to web sockets
+
+if we not use websockets then 
+browser ko refresh krne k baad client server pr baar baar req bjte rhega 
+for getting new message everytime
+
+
+using websocket 
+
+Real time connections like
+UBER Real Time 
+Google map Real time
+Zomato real time Delivered
+Full Duplex Communication
+
+Coneection nahi tootta h after using websocket
+wihtout refreshing the page
+
+
+
+socket io is a library that use websocket
