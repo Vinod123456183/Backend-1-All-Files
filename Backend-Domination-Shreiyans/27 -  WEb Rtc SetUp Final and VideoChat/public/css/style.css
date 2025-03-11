@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Video Container */
+  #videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .video-player {
+    width: 48%;
+    max-height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #000;
+    margin: 1%;
+  }
+  
+  /* Control Buttons */
+  #controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .control-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .control-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .control-container svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media screen and (max-width: 768px) {
+    #videos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video-player {
+      width: 90%;
+      max-height: 60vh;
+      margin: 10px 0;
+    }
+  
+    #controls {
+      gap: 15px;
+    }
+  
+    .control-container {
+      padding: 12px;
+    }
+  
+    .control-container svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
