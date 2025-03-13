@@ -1,0 +1,12 @@
+testing api ->
+
+unit testing ->
+chote chote block ko test krna called unit testing
+
+
+full feature testing called integration testing
+like monogdb se phle hashing then create in mongo then return user
+
+
+end to end testing ->
+full testing
