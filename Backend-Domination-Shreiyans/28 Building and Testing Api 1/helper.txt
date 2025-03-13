@@ -1,0 +1,15 @@
+SSr = Page bjna with css , ejs files
+
+Data = We send Api Data
+
+
+Digital watch me sirf Data aata h , but frontend phle se Coded hota h , like Fridge , watch , etc
+
+Api = Sirf URLS h jb hum unme jaaenge toh sirf data milega 
+
+
+api route 
+/api/data/654564534534
+
+ye sirf data dega nothing else
+ye data dega nd render nahi hoga
