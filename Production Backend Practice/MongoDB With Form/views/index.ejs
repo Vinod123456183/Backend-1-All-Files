@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User List</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div><%- include("layout/header")%></div>
+
+    <div class="container">
+      <h1>User List</h1>
+      <% if (users.length) { %> <% users.forEach(user => { %>
+      <div class="user-card">
+        <div class="user-info">
+          <p><strong>Name:</strong> <%= user.name %></p>
+          <p><strong>Username:</strong> <%= user.userName %></p>
+          <p><strong>Phone:</strong> <%= user.phone %></p>
+          <p><strong>Email:</strong> <%= user.email %></p>
+        </div>
+        <div class="actions">
+          <a href="/edit/<%= user.id %>" class="edit-btn">Edit</a>
+        </div>
+      </div>
+      <% }) %> <% } else { %>
+      <p style="text-align: center">No users found.</p>
+      <% } %>
+    </div>
+  </body>
+</html>
