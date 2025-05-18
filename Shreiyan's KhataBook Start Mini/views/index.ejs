@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="" href="">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="flex  justify-between items-center px-10 p-3 font-semibold">
+
+        <div class=" flex gap-4 justify-center items-center text-gray-700">
+            <p>KhataBook</p>
+        </div>
+
+        <div class="flex gap-4 justify-center items-center text-gray-700">
+            <p><a href="">Home</a></p>
+            <p><a href="/create">Create New Hisaab</a></p>
+        </div>
+
+    </div>
+
+
+    <div class="px-10 pt-7">
+
+        <div class=" pb-5">
+            <p>HisaabKitaab</p>
+        </div>
+
+        <!-- yahan pr data display hoga -->
+        <!-- same same h toh forEachLoop use Hoga -->
+        <div class="flex flex-wrap gap-2">            
+            <% files.forEach((file) => { %>
+                <div class="flex gap-4 justify-center max-w-[350px] items-center text-gray-700 bg-blue-600 p-3 text-white font-semibold rounded-xl"> 
+                    
+                    <div class="w-96 "><%= file %></div>
+
+                    <div>
+                        <a href="/read/<%=file%>">Read</a>
+                    </div>                     
+                    
+                    <div>
+                        <a href="/update/<%=file%>">Edit </a>
+                    </div>
+
+                    
+        
+                    <div class="text-red-600">
+                        <a href="/delete/<%=file%>">Delete</a>
+                    </div> 
+
+                </div>
+            <% }) %>
+        
+            <!-- display here file that i crated in aboive form -->    
+        
+        </div>
+    
+    </div>
+
+
+</body>
+</html>
