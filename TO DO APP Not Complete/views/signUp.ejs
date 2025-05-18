@@ -1,0 +1,46 @@
+<%- include("layouts/header") %>
+
+<div class="h-[90vh] flex items-center justify-center bg-gray-100">
+  <div class="bg-white p-8 rounded-2xl shadow-md w-full max-w-md">
+    <h1 class="text-3xl font-bold text-center mb-6 text-black">Register</h1>
+
+    <form action="/register" method="POST" class="space-y-4">
+      <div>
+        <input
+          type="text"
+          name="userName"
+          placeholder="Name"
+          required
+          class="w-full p-3 border rounded-lg  focus:outline-none focus:ring-2 focus:ring-black"
+        />
+      </div>
+
+      <div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+        />
+      </div>
+
+      <div>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+          class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
