@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="p-2 flex item-center justify-center pt-14 font-semibold">
+        <p>Hello Sir, your created page with name <span class="text-blue-500 font-bold"><%= fileName %></span> data is displayed below.</p>
+    </div>
+
+    <!-- Display File Content in a Readable Box -->
+    <div class="flex item-center justify-center bg-gray-300 mx-10 p-5 rounded-md">
+        <p class="wrap text-center">
+            <%= data %>
+        </p>
+    </div>
+
+    <!-- Edit Form to Update the Content -->
+ 
+
+</body>
+</html>
