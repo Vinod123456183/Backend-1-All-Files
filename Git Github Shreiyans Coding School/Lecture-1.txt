@@ -1,0 +1,16 @@
+
+git reset  --hard HEAD~1 
+
+ Remove-Item -Recurse -Force .git
+
+ git branch feature/navbar  
+
+git branch --oneline --graph 
+
+git merge 
+
+git status
+
+git stash apply 
+
+
