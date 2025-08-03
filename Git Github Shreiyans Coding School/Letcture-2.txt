@@ -1,0 +1,30 @@
+git status tell file changes k baare me and uske state k baare me 
+before and after commit 
+
+git log ->sare commit history
+git status -> commit k phle ki  file stage and commmit k baad ki file stage
+
+
+
+naye code se khud ki copy me changes called => Branching 
+
+
+
+
+means jb hum git commit -m "" kr dete h toh fir  uske baad git status -s me kuch nahi aega 
+
+
+
+jb branch me code likha h and humne usse commit nahi kiya h 
+and 
+hum dusre branch me jaane ki kosis krte h toh git aapko bolta h ki ki saved nahi h (no checkpoints)
+changes deelte ho jaenge hum chae toh changes ko delet hone de ya fir unnhe draft kr skte h 
+jb bhi draft krenge toh voh chnages na hi delete honge na hi add honge 
+but 
+beech me kahin dale rahnge 
+jb branch me wapas aae to changes ko apply kr skte h 
+
+
+git switch -C feature/Footer
+
+isse hum feature branch me switch ho jate h aur sath me create bhi ho jati h
