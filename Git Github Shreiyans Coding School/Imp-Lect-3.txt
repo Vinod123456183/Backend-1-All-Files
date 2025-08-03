@@ -1,0 +1,25 @@
+? means untracked files
+AM Added But curently modified
+
+Untracked 
+    |
+Added
+    |
+Modify
+    |
+
+
+Commit means Saved Point Create
+
+
+
+new line changes are done 
+again
+
+
+new changes are Done in main 
+this is in The NavBar 
+
+
+
+
