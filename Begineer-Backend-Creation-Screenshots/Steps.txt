@@ -1,0 +1,1 @@
+Steps for beginer who is learning the backend using js and node . 
