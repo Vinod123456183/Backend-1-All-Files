@@ -1,0 +1,59 @@
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - server1
+      - server2
+      - server3
+
+  server1:
+    build: ./server
+    # jo ./server folder k andar file thi , voh default run ho rahi thi 3000 port from the env file .
+    # ussi ki port mapping kra di . 5000 k sath .
+    # FIX: format "HOST:CONTAINER" hota h. container ke andar app 3000 pe h, host pe 5001 se khulega
+    env_file:
+      - ./server/.env
+    environment:
+      -  SERVER_NAME:"Pehla Server "
+    ports:
+      - "5001:3000"
+
+  server2:
+    build: ./server
+    # jo ./server folder k andar file thi , voh default run ho rahi thi 3000 port from the env file .
+    # ussi ki port mapping kra di . 5000 k sath .
+    # FIX: format "HOST:CONTAINER" hota h. container ke andar app 3000 pe h, host pe 5002 se khulega
+    env_file:
+      - ./server/.env
+    environment:
+      -  SERVER_NAME:"Dusra Server "
+    ports:
+      - "5002:3000"
+
+  server3:
+    build: ./server
+    # jo ./server folder k andar file thi , voh default run ho rahi thi 3000 port from the env file .
+    # ussi ki port mapping kra di . 5000 k sath .
+    # FIX: format "HOST:CONTAINER" hota h. container ke andar app 3000 pe h, host pe 5003 se khulega
+    env_file:
+      - ./server/.env
+    environment:
+      -  SERVER_NAME:"Teesra Server "
+    ports:
+      - "5003:3000"
+
+# so i m getting req from 5000 and 8000, is this ok.
+# Haan, bilkul ok hai. Ye normal hai, kyunki tumne dono ports host pe khol rakhe hain:
+# · 8000 -> nginx ke through aata hai (proxy)
+# · 5000 -> direct server pe aata hai (nginx ko bypass karke)
+
+# Container ka port same ho skta
+# local machine m diff port hona chaiye.
+
+# nginx 8000 ses 3000 m bj dega in _ local machine
+# FIX: ab host pe: nginx = localhost:8000, direct server = localhost:5000
